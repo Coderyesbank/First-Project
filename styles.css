@@ -1,0 +1,168 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body
+{
+    background-color: #000;
+}
+.button {
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border: 0;
+    position: relative;
+    overflow: hidden; 
+    cursor: pointer;
+}
+.button span {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    transition: left 0.5s ease;
+}
+
+.button:hover::before {
+    left: 0; 
+}
+
+
+.text
+{
+    font-size: x-large;
+    color: white;
+}
+header
+{
+    background-image: url(https://insuranceblog.accenture.com/wp-content/uploads/2020/06/AdobeStock_323830148-scaled.jpeg);
+    object-fit: cover;
+    height: 500px;
+}
+.Main-Heading
+{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    font-size: x-large;
+}
+.left
+{
+    color: aliceblue;
+}
+nav>ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+
+}
+a
+{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+    
+}
+a:hover
+{
+    color: red;
+}
+.Description
+{
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.product-title
+{
+    /* background-color: aqua; */
+    font-size: x-large;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: rgb(9, 101, 230);
+
+}
+.product-listing
+{
+    /* background-color: yellow; */
+    font-size: x-large;
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.products
+{
+    /* background-color: rgb(8, 30, 233); */
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    transform: translate(5px);
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-name
+{
+    text-align: center;
+    margin: 10px;
+}
+footer
+{
+    background-color: gray;
+    height: 400px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icons
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon
+{
+    font-size:100px; 
+    transition: 1s;
+    cursor: pointer;
+}
+.icon:hover
+{
+    color: orange;
+    transform: scale(1.1);
+}
+.end-desc
+{
+    height: 250px;
+    padding: 15px;
+}
